@@ -12,6 +12,7 @@ return [
     'text_empty' => 'No added event rules',
 
     'column_name' => 'Name',
+    'column_event' => 'Event',
     'column_code' => 'Code',
     'column_status' => 'Status',
     'column_condition_priority' => 'Priority',

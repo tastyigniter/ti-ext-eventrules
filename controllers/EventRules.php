@@ -21,7 +21,7 @@ class EventRules extends \Admin\Classes\AdminController
             'model' => 'Igniter\EventRules\Models\EventRule',
             'title' => 'lang:igniter.eventrules::default.text_title',
             'emptyMessage' => 'lang:igniter.eventrules::default.text_empty',
-            'defaultSort' => ['id', 'DESC'],
+            'defaultSort' => ['code', 'DESC'],
             'configFile' => 'eventrule',
         ],
     ];

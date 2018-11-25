@@ -90,6 +90,20 @@ class EventRule extends Model
     }
 
     //
+    // Attributes
+    //
+
+    public function getEventNameAttribute()
+    {
+        return $this->getEventObject()->getEventName();
+    }
+
+    public function getEventDescriptionAttribute()
+    {
+        return $this->getEventObject()->getEventDescription();
+    }
+
+    //
     // Events
     //
 

@@ -17,6 +17,11 @@ return [
                     'href' => 'igniter/eventrules/eventrules/edit/{id}',
                 ],
             ],
+            'event_name' => [
+                'label' => 'lang:igniter.eventrules::default.column_event',
+                'type' => 'text',
+                'sortable' => FALSE,
+            ],
             'name' => [
                 'label' => 'lang:igniter.eventrules::default.column_name',
                 'type' => 'text',
