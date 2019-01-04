@@ -21,8 +21,8 @@ class Extension extends BaseExtension
     {
         return [
             'Igniter.EventRules' => [
-                'description' => 'Some permission',
-                'action' => ['access', 'add', 'manage', 'delete'],
+                'description' => 'Ability to manage event rules',
+                'group' => 'module',
             ],
         ];
     }
@@ -39,7 +39,7 @@ class Extension extends BaseExtension
                         'title' => lang('igniter.eventrules::default.text_title'),
                         'permission' => 'Igniter.EventRules',
                     ],
-                ]
+                ],
             ],
         ];
     }
