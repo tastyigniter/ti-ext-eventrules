@@ -30,7 +30,7 @@ class EventRule extends Model
         'hasMany' => [
             'conditions' => [EventRuleCondition::class, 'delete' => TRUE],
             'actions' => [EventRuleAction::class, 'delete' => TRUE],
-        ]
+        ],
     ];
 
     public $casts = [
@@ -59,7 +59,7 @@ class EventRule extends Model
             return $condition->getConditionObject()->isTrue($params);
         });
 
-        if (!$validConditions->count())
+        if (!$conditions->isEmpty() AND !$validConditions->count())
             return FALSE;
 
         $this->actions->each(function (EventRuleAction $action) use ($params) {
@@ -152,6 +152,7 @@ class EventRule extends Model
         }
 
         $this->event_class = $class;
+
         return TRUE;
     }
 

@@ -8,6 +8,7 @@ class ProcessEventRule
     use \Illuminate\Queue\SerializesAndRestoresModelIdentifiers;
 
     protected $eventClass;
+
     protected $params;
 
     /**
@@ -30,12 +31,12 @@ class ProcessEventRule
      */
     public function handle()
     {
-        $this->delete();
-
         EventManager::instance()->fireEvent(
             $this->eventClass,
             $this->unserializeParams()
         );
+
+        $this->delete();
     }
 
     protected function serializeParams($params)

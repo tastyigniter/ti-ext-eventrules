@@ -2,7 +2,6 @@
 
 use Admin\Widgets\Form;
 use Event;
-use Igniter\EventRules\Classes\EventManager;
 use System\Classes\BaseExtension;
 
 /**
@@ -12,7 +11,7 @@ class Extension extends BaseExtension
 {
     public function boot()
     {
-        EventManager::instance()->bindEventRules();
+        \Igniter\EventRules\Classes\EventManager::instance()->bindEventRules();
 
         $this->extendActionFormFields();
     }
