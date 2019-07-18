@@ -139,7 +139,7 @@ class SendMailTemplate extends \Igniter\EventRules\Classes\BaseAction
 A condition class must declare an `isTrue` method for evaluating whether the condition is true or not.
 
 ```
-class MyCondition extends \Igniter\EventRules\Classes\BaseAction
+class MyCondition extends \Igniter\EventRules\Classes\BaseCondition
 {
     /**
      * Returns information about this condition, including name and description.
