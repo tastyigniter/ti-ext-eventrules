@@ -77,7 +77,7 @@ class CustomerRegisteredEvent extends \Igniter\EventRules\Classes\BaseEvent
     {
         return [
             'name'        => 'Registered',
-            'description' => 'A customer is registered',
+            'description' => 'When a customer registers',
             'group'       => 'customer'
         ];
     }

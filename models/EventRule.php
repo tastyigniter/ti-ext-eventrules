@@ -223,9 +223,9 @@ class EventRule extends Model
 
         foreach ($actions as $actionClass => $config) {
             $eventRuleAction = new EventRuleAction;
+            $eventRuleAction->fill($config);
             $eventRuleAction->class_name = $actionClass;
             $eventRuleAction->event_rule_id = $eventRule->getKey();
-            $eventRuleAction->options = $config;
             $eventRuleAction->save();
         }
 
