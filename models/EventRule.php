@@ -41,7 +41,7 @@ class EventRule extends Model
 
     public $rules = [
         'name' => 'sometimes|required|string',
-        'code' => 'sometimes|required|unique:igniter_eventrules_rules,code',
+        'code' => 'sometimes|required|alpha_dash|unique:igniter_eventrules_rules,code',
         'event_class' => 'required',
     ];
 

@@ -37,12 +37,17 @@ return [
                 'type' => 'switch',
                 'searchable' => TRUE,
             ],
+            'id' => [
+                'label' => 'lang:admin::lang.column_id',
+                'invisible' => TRUE,
+            ],
         ],
     ],
 
     'form' => [
         'toolbar' => [
             'buttons' => [
+                'back' => ['label' => 'lang:admin::lang.button_icon_back', 'class' => 'btn btn-default', 'href' => 'igniter/eventrules/eventrules'],
                 'save' => [
                     'label' => 'lang:admin::lang.button_save',
                     'class' => 'btn btn-primary',
@@ -54,7 +59,6 @@ return [
                     'data-request' => 'onSave',
                     'data-request-data' => 'close:1',
                 ],
-                'back' => ['label' => 'lang:admin::lang.button_icon_back', 'class' => 'btn btn-default', 'href' => 'igniter/eventrules/eventrules'],
             ],
         ],
         'fields' => [
@@ -168,6 +172,6 @@ return [
                     'context' => ['edit', 'preview'],
                 ],
             ],
-        ]
+        ],
     ],
 ];

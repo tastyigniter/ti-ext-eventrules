@@ -13,7 +13,7 @@ class EventRules extends \Admin\Classes\AdminController
 {
     public $implement = [
         'Admin\Actions\FormController',
-        'Admin\Actions\ListController'
+        'Admin\Actions\ListController',
     ];
 
     public $listConfig = [
@@ -21,7 +21,7 @@ class EventRules extends \Admin\Classes\AdminController
             'model' => 'Igniter\EventRules\Models\EventRule',
             'title' => 'lang:igniter.eventrules::default.text_title',
             'emptyMessage' => 'lang:igniter.eventrules::default.text_empty',
-            'defaultSort' => ['code', 'DESC'],
+            'defaultSort' => ['id', 'DESC'],
             'configFile' => 'eventrule',
         ],
     ];
