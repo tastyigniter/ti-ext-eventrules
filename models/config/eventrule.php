@@ -23,7 +23,7 @@ return [
                 'sortable' => FALSE,
             ],
             'name' => [
-                'label' => 'lang:igniter.eventrules::default.column_name',
+                'label' => 'lang:admin::lang.label_name',
                 'type' => 'text',
                 'searchable' => TRUE,
             ],
@@ -33,7 +33,7 @@ return [
                 'searchable' => TRUE,
             ],
             'status' => [
-                'label' => 'lang:igniter.eventrules::default.column_status',
+                'label' => 'lang:admin::lang.label_status',
                 'type' => 'switch',
                 'searchable' => TRUE,
             ],
@@ -146,7 +146,7 @@ return [
 
                 'name' => [
                     'tab' => 'Settings',
-                    'label' => 'lang:igniter.eventrules::default.label_name',
+                    'label' => 'lang:admin::lang.label_name',
                     'type' => 'text',
                     'context' => ['edit', 'preview'],
                     'span' => 'left',
@@ -160,13 +160,13 @@ return [
                 ],
                 'description' => [
                     'tab' => 'Settings',
-                    'label' => 'lang:igniter.eventrules::default.label_description',
+                    'label' => 'lang:admin::lang.label_description',
                     'context' => ['edit', 'preview'],
                     'type' => 'textarea',
                 ],
                 'status' => [
                     'tab' => 'Settings',
-                    'label' => 'lang:igniter.eventrules::default.label_status',
+                    'label' => 'lang:admin::lang.label_status',
                     'type' => 'switch',
                     'default' => TRUE,
                     'context' => ['edit', 'preview'],

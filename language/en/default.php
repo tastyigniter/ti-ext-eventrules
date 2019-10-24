@@ -11,7 +11,6 @@ return [
     'text_tab_general' => 'General',
     'text_empty' => 'No added event rules',
 
-    'column_name' => 'Name',
     'column_event' => 'Event',
     'column_code' => 'Code',
     'column_status' => 'Status',
@@ -20,9 +19,7 @@ return [
     'column_condition_operator' => 'Operator',
     'column_condition_value' => 'Value',
 
-    'label_name' => 'Name',
     'label_code' => 'Code',
-    'label_description' => 'Description',
     'label_event' => 'Event',
     'label_actions' => 'Actions',
     'label_conditions' => 'Conditions',
