@@ -107,7 +107,7 @@ class EventRule extends Model
     // Events
     //
 
-    public function afterFetch()
+    protected function afterFetch()
     {
         $this->applyEventClass();
     }

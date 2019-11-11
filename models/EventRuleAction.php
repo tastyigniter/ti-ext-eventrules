@@ -22,7 +22,7 @@ class EventRuleAction extends Model
     public $relation = [
         'belongsTo' => [
             'event_rule' => [EventRule::class, 'key' => 'event_rule_id'],
-        ]
+        ],
     ];
 
     public $casts = [
@@ -51,13 +51,13 @@ class EventRuleAction extends Model
     // Events
     //
 
-    public function afterFetch()
+    protected function afterFetch()
     {
         $this->applyActionClass();
         $this->loadCustomData();
     }
 
-    public function beforeSave()
+    protected function beforeSave()
     {
         $this->setCustomData();
     }
@@ -86,6 +86,7 @@ class EventRuleAction extends Model
         }
 
         $this->class_name = $class;
+
         return TRUE;
     }
 
