@@ -37,7 +37,7 @@ class EventRule extends Model
         'config_data' => 'array',
     ];
 
-    public $purgeable = ['actions', 'conditions'];
+    protected $purgeable = ['actions', 'conditions'];
 
     public $rules = [
         'name' => 'sometimes|required|string',
