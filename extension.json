@@ -2,7 +2,7 @@
   "code": "igniter.eventrules",
   "name": "Event Rules",
   "description": "Configure event rule actions to be triggered when certain events happen in TastyIgniter",
-  "version": "v1.0.4",
+  "version": "v1.0.6",
   "author": "SamPoyigi",
   "icon": "fa-tasks",
   "homepage": "https://github.com/tastyigniter/ti-ext-eventrules"
