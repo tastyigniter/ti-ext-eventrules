@@ -49,7 +49,7 @@ class EventRules extends \Admin\Classes\AdminController
         'configFile' => 'eventrule',
     ];
 
-    protected $requiredPermissions = 'Igniter.EventRules';
+    protected $requiredPermissions = 'Igniter.EventRules.*';
 
     public function __construct()
     {

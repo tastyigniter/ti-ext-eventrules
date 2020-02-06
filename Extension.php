@@ -19,8 +19,8 @@ class Extension extends BaseExtension
     public function registerPermissions()
     {
         return [
-            'Igniter.EventRules' => [
-                'description' => 'Ability to manage event rules',
+            'Igniter.EventRules.Manage' => [
+                'description' => 'Create, modify and delete event rules',
                 'group' => 'module',
             ],
         ];
@@ -36,7 +36,7 @@ class Extension extends BaseExtension
                         'class' => 'eventrules',
                         'href' => admin_url('igniter/eventrules/eventrules'),
                         'title' => lang('igniter.eventrules::default.text_title'),
-                        'permission' => 'Igniter.EventRules',
+                        'permission' => 'Igniter.EventRules.*',
                     ],
                 ],
             ],
