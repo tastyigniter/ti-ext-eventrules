@@ -1,8 +1,8 @@
 {
   "code": "igniter.eventrules",
-  "name": "Event Rules",
+  "name": "Event Rules (no longer supported, see Automation extension)",
   "description": "Configure event rule actions to be triggered when certain events happen in TastyIgniter",
-  "version": "v1.0.7",
+  "version": "v1.0.8",
   "author": "SamPoyigi",
   "icon": {
     "class": "fa fa-tasks",

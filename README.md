@@ -1,3 +1,5 @@
+# This extension has been renamed to [Automation extension](https://github.com/tastyigniter/ti-ext-automation) and is no longer supported.
+
 ## Event Rules and Actions for TastyIgniter
 
 This extension allows admins to configure event rule actions to be triggered when certain events happen in TastyIgniter. 

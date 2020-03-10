@@ -11,6 +11,9 @@ class Extension extends BaseExtension
 {
     public function boot()
     {
+        if (\App::runningInAdmin())
+            flash()->danger('EventRules extension is no longer supported, see Automation extension');
+
         \Igniter\EventRules\Classes\EventManager::instance()->bindEventRules();
 
         $this->extendActionFormFields();
